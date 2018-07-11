@@ -1,0 +1,7 @@
+# ignor output directory
+odir/
+output/
+
+*.h5
+
+.DS_Store
