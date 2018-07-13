@@ -66,7 +66,7 @@ class FileSubmitter():
 		self.log_name = "{}{}_{}_{}_run{}".format(log_dir, dtype,
 									  zenith, direction, runnumber)
 		# name of outputfile
-		self.outputfile = '{}/output _{}_{}_{}_run{}.h5'.format(
+		self.outputfile = '{}/output_{}_{}_{}_run{}.h5'.format(
 						odir, dtype, zenith, direction, runnumber)
 
 	def submit(self):
