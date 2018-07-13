@@ -1,8 +1,12 @@
-# ignor output directory
+# output directory
 odir/
 output/
 
+Tests/
+
 *.h5
+
+._*
 
 .ipynb_checkpoints
 .DS_Store
