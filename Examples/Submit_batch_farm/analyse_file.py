@@ -59,7 +59,7 @@ if __name__ == '__main__':
 	args = parser.parse_args()
 
 	file = args.filepath
-	outputfile = args.outputfiles
+	outputfile = args.outputfile
 	tels_to_use = args.tels_to_use
 
 	try:
@@ -129,7 +129,7 @@ if __name__ == '__main__':
 				cleaned_image[~mask] = 0 # apply image cleaning
 				params = hillas_parameters(camera, cleaned_image)
 
-				if params.size < quality_cuts["size"]:
+				if params.intensity < quality_cuts["size"]:
 					# telescope didn't survive size cut
 					continue
 

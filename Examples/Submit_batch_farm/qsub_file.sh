@@ -24,14 +24,10 @@
 
 # Sourcing .zshrc and conda environment for ctapipe to
 # ensure that the correct package versions are used.
-
-# source .zshrc
 source $HOME/.zshrc
-
-# source cta-dev evironment
 source activate cta-dev
 
-# read the inputs
+# read inputs
 FILE=$1
 OUTPUTFILE=$2
 TELS=$3
@@ -45,4 +41,3 @@ which python
 echo "\n--------------- Start of analysis ---------------"
 # execute the analysis
 python $DIR/analyse_file.py --filepath $FILE --outputfile $OUTPUTFILE --integrator $INTEGRATOR --cleaner $CLEANER --tels_to_use $TELS
-#python $DIR/analyse_file.py --filepath $FILE --outputfile $OUTPUTFILE --integrator $INTEGRATOR --cleaner $CLEANER --tels_to_use $TELS
