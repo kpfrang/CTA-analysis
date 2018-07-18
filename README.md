@@ -21,7 +21,7 @@ The Ipython Notebook [mono_analysis](Notebooks/mono_analysis.ipynb) gives a step
 From those analysis results, a possible list of features might be extracted for training models for the classification of the primary particle IDs or the primaries’ energies. Further examples of specific tasks can be found within the ctapipe GitHub [repository](https://github.com/cta-observatory/ctapipe/tree/master/examples).
 
 ### Submission of jobs to DESY cluster
-A basic example of a submission of ctapipe jobs to the DESY cluster is given in [Submit_batch_farm](Examples/Submit_batch_farm). For each simulation file specified in the runlist a job will be specified running the mono analysis and saving the output to HDF files.
+A basic example of a submission of ctapipe jobs to the DESY cluster is given in [Submit_batch_farm](Examples/Submit_batch_farm). For each simulation file specified in the runlist a job will be submitted running the mono analysis and saving the output to HDF files.
 
 
 ### Event reconstruction
