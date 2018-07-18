@@ -13,3 +13,12 @@ The parameter `--odir` specifies the output directory. The telescope configurati
 After extracting parameters like runnumber, zenith angle etc, the [qsub_file.sh](qsub_file.sh) is called. It sets the correct environment variables by sourcing `$HOME/.zshrc` and activating the conda environment `cta-dev`. Sourcing `.zshrc` should ensure that the correct python version is used. Therefore it should add your anaconda installation to the `PATH`. In case of different naming or an installation without the virtual environment, this might need minor adaptions in order to run for you.
 
 With the correct environment [analyse_file.py](analyse_file.py) is started which performs the low-level reconstruction. For details of the single steps see this [Notebook](../../Notebooks/mono_analysis.ipynb) or the ctapipe [repository](https://github.com/cta-observatory/ctapipe). The output will be written to h5 files in the `odir` directory and might be read back in using `pandas.read_hdf()` (see the LOG files).
+
+##### List of tasks covered in analysis
+- Read file
+- Select telescopes
+- Calibration
+- Image cleaning
+- Hillas parametrization
+- Size cut
+- Save result to HDF file
