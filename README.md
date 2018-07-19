@@ -12,7 +12,7 @@ For installation see https://cta-observatory.github.io/ctapipe/getting_started/i
 #### Troubleshooting
 
 - It happend that when installing `pyhessio` (python module for reading the simtel files) on warp the following error message appears when trying to import into python or running pytest from the ctapipe repository.  
-```E   OSError: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /lustre/fs19/group/cta/users/kpfrang/anaconda3/envs/cta-dev/lib/python3.6/site-packages/pyhessio/pyhessioc.cpython-36m-x86_64-linux-gnu.so)```. 
+```E   OSError: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /lustre/fs19/group/cta/users/kpfrang/anaconda3/envs/cta-dev/lib/python3.6/site-packages/pyhessio/pyhessioc.cpython-36m-x86_64-linux-gnu.so)```  
 See also this [issue](https://github.com/cta-observatory/pyhessio/issues/65). I have been able to work around this by removing this `pyhessio` from the activated environment `conda remove pyhessio` and building it from source `python setup.py develop`.
 ___
 
