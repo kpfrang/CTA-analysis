@@ -14,7 +14,8 @@ For installation see https://cta-observatory.github.io/ctapipe/getting_started/i
 - It happend that when installing `pyhessio` (python module for reading the simtel files) on warp the following error message appears when trying to import into python or running pytest from the ctapipe repository.  <br><br>
 ```E   OSError: /lib64/libc.so.6: version `GLIBC_2.14' not found (required by /lustre/fs19/group/cta/users/kpfrang/anaconda3/envs/cta-dev/lib/python3.6/site-packages/pyhessio/pyhessioc.cpython-36m-x86_64-linux-gnu.so)```  <br><br>
 See also this [issue](https://github.com/cta-observatory/pyhessio/issues/65). I have been able to work around this by removing `pyhessio` from the activated environment `conda remove pyhessio` and building it from source `python setup.py develop`.
-___
+
+***
 
 ### Notebooks
 
@@ -39,7 +40,6 @@ From those analysis results, a possible list of features might be extracted for 
 
 #### Submission of jobs to DESY cluster
 A basic example of a submission of ctapipe jobs to the DESY cluster is given in [Submit_batch_farm](Examples/Submit_batch_farm). For each simulation file specified in the runlist a job will be submitted running the mono analysis and saving the output to HDF files.
-
 
 ***
 
