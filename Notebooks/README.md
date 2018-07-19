@@ -15,7 +15,7 @@ If you have created a conda environment and want to use `ctapipe` within the not
 
 ### Short description
 
-- [mono_analysis](mono_analysis.ipynb): Low-level reconstructions. Focus on the mono analysis and direction reconstruction of events.<br><br>  
+- [mono_analysis](mono_analysis.ipynb): Low-level reconstructions. Focus on the mono analysis and direction reconstruction of events.<br><br>
 **_Important_:** To run this Notebook, you need to have at least one smitel file available. If you working locally you could use scp <br><br>
 `scp <usrname>@warp-zeuthen.desy.de:/lustre/fs21/group/cta/prod3b/prod3b-paranal20deg/gamma_onSource/gamma_20deg_180deg_run1___cta-prod3_desert-2150m-Paranal-merged.simtel.gz ~/simtel_files`
 
