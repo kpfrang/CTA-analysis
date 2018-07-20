@@ -9,6 +9,8 @@ The following page should help to give a smoother start working with ctapipe.
 
 For installation see https://cta-observatory.github.io/ctapipe/getting_started/index.html. It is recommended to use ctapipe from the conda virtual environment as described in this page to avoid conflicts with other python packages. Afterwards, ctapipe will be usable from within the activated conda environment.
 
+The scripts in this repository assume a conda environment called `cta-dev`, as well as the anaconda python added to the path in your `~/.zshrc`.
+
 #### Troubleshooting
 
 - It happend that when installing `pyhessio` (python module for reading the simtel files) on warp the following error message appears when trying to import into python or running pytest from the ctapipe repository.  <br><br>
